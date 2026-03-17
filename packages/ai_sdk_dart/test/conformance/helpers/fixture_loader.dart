@@ -3,7 +3,7 @@ import 'dart:io';
 
 /// Loads a JSON spec fixture from the conformance/specs directory.
 ///
-/// [relativePath] is relative to `packages/ai_sdk/test/conformance/specs/`.
+/// [relativePath] is relative to `packages/ai_sdk_dart/test/conformance/specs/`.
 /// This is the source-of-truth contract document; update it when v6 changes.
 Map<String, dynamic> loadFixture(String relativePath) {
   // Resolve relative to the file's own package test directory.
@@ -26,7 +26,7 @@ Map<String, dynamic> loadFixture(String relativePath) {
 
   // Fallback: search relative to the current working directory.
   final cwdCandidate = File(
-    '${Directory.current.path}/packages/ai_sdk/test/conformance/specs/$relativePath',
+    '${Directory.current.path}/packages/ai_sdk_dart/test/conformance/specs/$relativePath',
   );
   if (cwdCandidate.existsSync()) {
     return jsonDecode(cwdCandidate.readAsStringSync()) as Map<String, dynamic>;

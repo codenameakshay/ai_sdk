@@ -1,4 +1,4 @@
-library ai_sdk;
+library ai_sdk_dart;
 
 export 'src/agent/tool_loop_agent.dart';
 export 'src/core/embed.dart';

@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:ai_sdk/ai_sdk.dart';
+import 'package:ai_sdk_dart/ai_sdk_dart.dart';
 import 'package:ai_sdk_provider/ai_sdk_provider.dart';
 import 'package:test/test.dart';
 
@@ -32,7 +32,7 @@ void main() {
 }
 
 Map<String, dynamic> _readFixture(String name) {
-  final file = File('packages/ai_sdk/test/fixtures/stream_conformance/$name');
+  final file = File('packages/ai_sdk_dart/test/fixtures/stream_conformance/$name');
   return (jsonDecode(file.readAsStringSync()) as Map).cast<String, dynamic>();
 }
 

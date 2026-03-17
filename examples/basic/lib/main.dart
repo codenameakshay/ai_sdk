@@ -18,7 +18,7 @@
 ///
 import 'dart:io';
 
-import 'package:ai_sdk/ai_sdk.dart';
+import 'package:ai_sdk_dart/ai_sdk_dart.dart';
 import 'package:ai_sdk_openai/ai_sdk_openai.dart';
 
 // ─── helpers ────────────────────────────────────────────────────────────────

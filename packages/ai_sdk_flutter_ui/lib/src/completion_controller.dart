@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 
-import 'package:ai_sdk/ai_sdk.dart';
+import 'package:ai_sdk_dart/ai_sdk_dart.dart';
 
 /// Flutter controller for single-turn completion — mirrors the JS `useCompletion` hook.
 ///

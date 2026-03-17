@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import 'package:ai_sdk/ai_sdk.dart';
+import 'package:ai_sdk_dart/ai_sdk_dart.dart';
 import 'package:ai_sdk_openai/ai_sdk_openai.dart';
 import 'package:ai_sdk_provider/ai_sdk_provider.dart';
 import 'package:flutter/material.dart';

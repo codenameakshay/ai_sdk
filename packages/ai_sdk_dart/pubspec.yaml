@@ -1,4 +1,4 @@
-name: ai_sdk
+name: ai_sdk_dart
 description: Core AI SDK for Dart with provider-agnostic model APIs.
 version: 0.2.0
 homepage: https://github.com/codenameakshay/ai_sdk_dart
