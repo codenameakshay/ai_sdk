@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/codenameakshay/ai_sdk_dart/blob/main/docs/v6-parity-matrix.md
+    about: Feature-by-feature parity matrix against Vercel AI SDK v6
+  - name: GitHub Discussions
+    url: https://github.com/codenameakshay/ai_sdk_dart/discussions
+    about: Ask questions, share ideas, and get help from the community
+  - name: Vercel AI SDK v6 Docs
+    url: https://sdk.vercel.ai/docs
+    about: Official Vercel AI SDK documentation (the JS SDK this port mirrors)
