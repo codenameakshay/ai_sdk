@@ -1,3 +1,20 @@
+## 1.0.0
+
+First stable release. Defines the provider interface contract for all AI SDK Dart providers.
+
+- `LanguageModelV3` — `doGenerate` / `doStream` interface.
+- `EmbeddingModelV2<VALUE>` — `doEmbed` interface.
+- `ImageModelV3` — `doGenerate` interface.
+- `SpeechModelV1` — `doGenerate` interface.
+- `TranscriptionModelV1` — `doGenerate` interface.
+- `RerankModelV1` — `doRerank` interface.
+- Full `LanguageModelV3StreamPart` sealed class hierarchy (text, tool call, reasoning, source, file, finish, error parts).
+- `LanguageModelV3CallOptions` with all v6 call-time options.
+- `LanguageModelV3GenerateResult` and `LanguageModelV3StreamResult`.
+- Shared types: `JsonValue`, `ProviderMetadata`, content parts, finish reasons, tool definitions, usage.
+
+---
+
 ## 0.2.0
 
 - Initial release.

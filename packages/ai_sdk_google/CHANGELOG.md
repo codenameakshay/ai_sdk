@@ -1,3 +1,18 @@
+## 1.0.0
+
+First stable release. Depends on `ai_sdk_dart` 1.0.0.
+
+- `google('gemini-2.0-flash')` factory — create language model instances.
+- `googleEmbedding(modelId)` — text embedding models.
+- Full SSE streaming via `:streamGenerateContent` endpoint.
+- `functionCall` parts → `ToolCallPart` mapping.
+- Function tool declarations and `toolConfig` choice mapping.
+- `STOP` / `MAX_TOKENS` / `SAFETY` finish reason mapping.
+- Source, file content, and raw finish reason forwarding.
+- Configurable `baseUrl`.
+
+---
+
 ## 0.2.0
 
 - Initial release.

@@ -1,3 +1,20 @@
+## 1.0.0
+
+First stable release. Depends on `ai_sdk_dart` 1.0.0.
+
+- `openai('gpt-4.1-mini')` factory — create language model instances for any OpenAI-compatible endpoint.
+- `openaiEmbedding(modelId)` — text embedding models (text-embedding-3-small / large).
+- `openaiImage(modelId)` — image generation (DALL-E 3).
+- Full SSE streaming with tool call delta accumulation.
+- `stream_options: {include_usage: true}` for streaming usage reporting.
+- Tool choice mapping: auto / required / none / specific.
+- Strict tool schema forwarding (`strict: true`).
+- Extended thinking passthrough via provider metadata.
+- Source, file content, and raw finish reason forwarding.
+- Configurable `baseUrl` for Azure OpenAI and compatible endpoints.
+
+---
+
 ## 0.2.0
 
 - Initial release.

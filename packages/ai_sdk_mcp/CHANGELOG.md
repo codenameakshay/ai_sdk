@@ -1,3 +1,17 @@
+## 1.0.0
+
+First stable release. Depends on `ai_sdk_dart` 1.0.0.
+
+- `MCPClient` — manages a session with any MCP server via pluggable transport.
+- `SseClientTransport` — HTTP SSE transport for remote MCP servers; supports custom headers and separate POST URL.
+- `StdioMCPTransport` — stdio transport that spawns a local process and communicates via stdin/stdout.
+- `initialize()` — MCP protocol 2024-11-05 handshake with idempotency guard.
+- `tools()` — discovers available tools and returns a `ToolSet` compatible with `generateText` / `streamText`.
+- `callTool()` — invokes a named tool with structured arguments; throws `MCPException` on server-side errors.
+- `MCPException` — typed exception with `message` field.
+
+---
+
 ## 0.2.0
 
 - Initial release.

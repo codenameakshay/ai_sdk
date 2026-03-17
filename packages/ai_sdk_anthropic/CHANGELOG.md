@@ -1,3 +1,18 @@
+## 1.0.0
+
+First stable release. Depends on `ai_sdk_dart` 1.0.0.
+
+- `anthropic('claude-sonnet-4-5')` factory — create language model instances.
+- Full SSE streaming with `thinking` content block → `ReasoningPart` mapping.
+- `tool_use` content block → `ToolCallPart` mapping.
+- Tool choice mapping (Anthropic wire format).
+- Tool input examples forwarding via description enrichment.
+- Usage extraction from both `message_start` and `message_delta` events.
+- Source, file content, and raw finish reason forwarding.
+- Configurable `baseUrl`.
+
+---
+
 ## 0.2.0
 
 - Initial release.

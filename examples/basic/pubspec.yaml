@@ -8,5 +8,5 @@ environment:
   sdk: ^3.11.1
 
 dependencies:
-  ai_sdk_dart: ^0.2.0
-  ai_sdk_openai: ^0.2.0
+  ai_sdk_dart: ^1.0.0
+  ai_sdk_openai: ^1.0.0
