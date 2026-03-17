@@ -1,5 +1,6 @@
 name: ai_sdk_dart
 repository: https://github.com/codenameakshay/ai_sdk_dart
+sdkPath: .fvm/flutter_sdk
 
 packages:
   - packages/*

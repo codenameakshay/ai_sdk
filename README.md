@@ -154,7 +154,9 @@ See [docs/v6-parity-matrix.md](docs/v6-parity-matrix.md) for a feature-by-featur
 
 ---
 
-## Runnable example
+## Runnable examples
+
+### Dart CLI (`examples/basic`)
 
 ```sh
 cd examples/basic
@@ -163,6 +165,41 @@ dart run lib/main.dart
 ```
 
 Demonstrates: `generateText`, `streamText`, structured output, tools, embeddings, middleware, and the provider registry.
+
+### Flutter chat app (`examples/flutter_chat`)
+
+The Flutter example showcases all three `ai_sdk_flutter` controllers with a Material 3 UI: **Chat** (multi-turn streaming), **Completion** (single-turn with presets), and **Object** (streaming structured JSON).
+
+| Chat | Completion | Object stream |
+|------|------------|---------------|
+| [ChatController](examples/flutter_chat/lib/pages/chat_page.dart) — multi-turn streaming chat | [CompletionController](examples/flutter_chat/lib/pages/completion_page.dart) — single-turn with preset prompts | [ObjectStreamController](examples/flutter_chat/lib/pages/object_stream_page.dart) — typed JSON stream |
+
+**Chat flow** — home, streaming response, full response, multi-turn
+
+| Home | Streaming | Response | Long response | Multi-turn |
+|------|-----------|----------|---------------|------------|
+| ![Chat home](docs/screenshots/01_chat_home.png) | ![Chat streaming](docs/screenshots/02_chat_streaming.png) | ![Chat response](docs/screenshots/02_chat_response.png) | ![Chat long response](docs/screenshots/03_chat_response.png) | ![Chat multi-turn](docs/screenshots/04_chat_multiturn.png) |
+
+**Completion** — presets and generated results
+
+| Home | Async/await | Haiku | Tips |
+|------|-------------|-------|------|
+| ![Completion home](docs/screenshots/04_completion_home.png) | ![Completion async](docs/screenshots/06_completion_async_result.png) | ![Completion haiku](docs/screenshots/07_completion_haiku_result.png) | ![Completion tips](docs/screenshots/08_completion_tips_result.png) |
+
+**Object stream** — country profile (typed JSON)
+
+| Home | Japan | France |
+|------|-------|--------|
+| ![Object home](docs/screenshots/05_object_home.png) | ![Object Japan](docs/screenshots/09_object_japan_result.png) | ![Object France](docs/screenshots/10_object_france_result.png) |
+
+Run the app (API key via `--dart-define`):
+
+```sh
+cd examples/flutter_chat
+fvm flutter run --dart-define=OPENAI_API_KEY=sk-...
+```
+
+See [examples/flutter_chat/README.md](examples/flutter_chat/README.md) for structure and patterns.
 
 ---
 

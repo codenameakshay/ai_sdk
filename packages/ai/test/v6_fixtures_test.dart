@@ -108,6 +108,7 @@ String _eventName(StreamTextEvent event) {
     StreamTextFinishEvent() => 'finish',
     StreamTextSourceEvent() => 'source',
     StreamTextFileEvent() => 'file',
+    StreamTextUsageEvent() => 'usage',
     StreamTextErrorEvent() => 'error',
     StreamTextRawEvent() => 'raw',
   };
